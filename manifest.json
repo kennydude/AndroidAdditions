@@ -1,0 +1,17 @@
+{
+   "name":        "Android Developer Improvements",
+   "version":     "1",
+   "description": "New stuff for Android Devs",
+   "permissions": [
+      "http://developer.android.com/"
+   ],
+   "homepage_url": "http://kennydude.me",
+   "content_scripts": [
+      {
+         "matches": ["http://developer.android.com/*"],
+         "js": ["jquery.min.js","page.js"],
+         "all_frames": true
+      }
+   ]
+}
+

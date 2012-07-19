@@ -1,0 +1,2 @@
+<strong>Tip from Android G+ Developers:</strong>
+If you just want to keep the screen on, don't use a Wake Lock just use <a href="http://developer.android.com/reference/android/view/View.html#setKeepScreenOn(boolean)">View.setKeepScreenOn</a>
