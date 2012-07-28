@@ -1,0 +1,9 @@
+.androidadditon{
+	border-left: 4px solid green;
+	padding: 0 0 0 10px;
+}
+.androidadditon:after{
+	padding-top: 10px;
+	content: "Inserted by Android Additions";
+	font-style: italic;
+}

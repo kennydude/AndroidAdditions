@@ -10,6 +10,7 @@
       {
          "matches": ["http://developer.android.com/*"],
          "js": ["jquery.min.js","page.js"],
+	 "css" : ["page.css"],
          "all_frames": true
       }
    ]

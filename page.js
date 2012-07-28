@@ -2,9 +2,10 @@
 
 function l(h, t, x_id){
 	// load item
+	var x_id = x_id;
 	$.get(chrome.extension.getURL("content/" + h + "/"+t+".txt"), function(d, x, e){
-		$("<div>").addClass("aa-class-op").html(d).appendTo(".add-id-" + x_id);
-	});
+		$("<div>").addClass("androidadditon").html(d).appendTo(".add-id-" + x_id);
+	}, "text");
 }
 
 $(document).ready(function(){
@@ -28,9 +29,9 @@ $(document).ready(function(){
 
 		// Request Class Overview
 		$.get(chrome.extension.getURL("content/" + h + "/class-ov.txt"), function(d){
-			$("<div>").addClass("aa-class-ov").html("<h1>Android Additions Notes</h1>" + d).insertAfter(".jd-descr:first");
+			$("<div>").addClass("androidadditon").insertAfter(".jd-descr:first").html(d);
 		}, "text");
-		$.get(chrome.extension.getURL("content/" + h + "/class-ov.js"), function(){}, "script");
+		$("<script>").attr("async", "true").attr("src", chrome.extension.getURL("content/" + h + "/class-ov.js")).appendTo("head");
 
 		// Get all the detail extras
 		var id = 0;
