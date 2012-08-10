@@ -1,6 +1,7 @@
 {
    "name":        "Android Developer Improvements",
-   "version":     "1",
+   "version":     "2",
+   "manifest_version" : 2,
    "description": "New stuff for Android Devs",
    "permissions": [
       "http://developer.android.com/"
