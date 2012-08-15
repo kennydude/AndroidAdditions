@@ -45,5 +45,21 @@ $(document).ready(function(){
 
 			l(h, t, x_id);
 		});
+	} else if(p[0] == "design"){
+		// Design
+		$("img").each(function(){
+			l = $(this).attr("src").split("/"); l.shift();
+			var img = this;
+			$.get(chrome.extension.getURL("content/design/" + l.join("_") + ".txt"), function(data){
+				$("<div>").addClass("androidadditon").html(data).insertAfter(img);
+			});
+		});
+	} else if(p[0] == "guide"){
+		$.get(chrome.extension.getURL("content/guides/nav.html"), function(data){
+			li = $("<li>").addClass("nav-section").html(data).insertBefore(".nav-section:first");
+			$("ul a", li).each(function(){
+				$(this).attr("target", "_blank").attr("href", chrome.extension.getURL("guide.html") + "#" + chrome.extension.getURL("content/guides/") + $(this).attr("href")).attr("title", "This guide is not provided by Google");
+			});
+		});
 	}
 });

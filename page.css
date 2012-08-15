@@ -1,6 +1,7 @@
 .androidadditon{
 	border-left: 4px solid green;
 	padding: 0 0 0 10px;
+	margin-bottom: 5px;
 }
 .androidadditon:after{
 	padding-top: 10px;
