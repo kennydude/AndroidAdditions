@@ -1,3 +1,0 @@
-<p>And here's one I did earlier (Blue Peter style!):</p>
-<p class="doneEarlier"></p>
-

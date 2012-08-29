@@ -1,3 +1,0 @@
-<p>
-If you want a photo view like that in the gallery with zooming and fancy-ness <a href="https://github.com/chrisbanes/PhotoView">check out Chris Bane's PhotoView library</a>
-</p>

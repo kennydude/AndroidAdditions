@@ -6,7 +6,12 @@ Due to changes in Chrome, this is manual. Google, you can be a pest when you wan
 
 import glob, json
 
-files = glob.glob("content/*/*")
+files = []
+rfiles = glob.glob("content/*/*")
+for file in rfiles:
+	files.append(file.replace(".md", ".txt"))
+files.append("content/guides/nav.html")
+
 manifest = json.load(open("manifest.json.template", "r"))
 manifest['web_accessible_resources'] = files
 

@@ -1,4 +1,4 @@
-<h1>Contact Sync</h1>
+# Contact Sync
 <a href="http://twitter.com/kennydude">by kennydude</a>
 <p>
 	Coming soon!

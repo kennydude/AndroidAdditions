@@ -8,3 +8,7 @@
 	content: "Inserted by Android Additions";
 	font-style: italic;
 }
+.androidadditon pre{
+	max-height: 400px;
+	overflow: auto;
+}

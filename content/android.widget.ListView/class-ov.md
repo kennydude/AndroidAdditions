@@ -1,0 +1,1 @@
+If you want to add PullToRefresh (please don't, it's against Android Holo Guidelines, but if you don't care) the best [implementation is by Chris Banes](https://github.com/chrisbanes/Android-PullToRefresh)

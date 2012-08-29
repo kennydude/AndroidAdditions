@@ -1,6 +1,0 @@
-<p>
-This is really useful for glowable edges. You can rotate the canvas before drawing, which allows you to move the glow. By default it glows from the top edge.
-</p>
-<p>
-You can automate a glow by having a float value, increasing on <code>draw()</code>, and calling <code>onPull()</code> until a sepecified value, then <code>onRelease</code>.
-</p>

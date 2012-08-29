@@ -1,3 +1,0 @@
-<p>
-DON'T USE THIS! <a href="https://github.com/DHuckaby/Prime">Prime</a> and <a href="https://github.com/DarrenMowat/AndroidImageLoader">AndroidImageLoader</a> are good libraries that cache and do the network stuff for you! ^__^
-</p>
