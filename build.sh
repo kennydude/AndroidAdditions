@@ -24,6 +24,10 @@ for file in `ls content/*/class-ov.js`; do
 	cp $file bin/$file
 done;
 
+for file in `ls content/*/*.png`; do
+	cp $file bin/$file
+done;
+
 cd bin
 zip ../extension.zip content/*/* manifest.json jquery.min.js page.js guide.html guide.js page.css
 cd ..

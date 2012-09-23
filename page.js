@@ -29,7 +29,10 @@ $(document).ready(function(){
 
 		// Request Class Overview
 		$.get(chrome.extension.getURL("content/" + h + "/class-ov.txt"), function(d){
-			$("<div>").addClass("androidadditon").insertAfter(".jd-descr:first").html(d);
+			aa = $("<div>").addClass("androidadditon").insertAfter(".jd-descr:first").html(d);
+			$("img", aa).each(function(){
+				$(this).attr("src", chrome.extension.getURL("content/" + h + "/" + $(this).attr("src")));
+			});
 		}, "text");
 		$("<script>").attr("async", "true").attr("src", chrome.extension.getURL("content/" + h + "/class-ov.js")).appendTo("head");
 
