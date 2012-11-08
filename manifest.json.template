@@ -9,7 +9,7 @@
    "homepage_url": "http://kennydude.me",
    "content_scripts": [
       {
-         "matches": ["http://developer.android.com/*"],
+         "matches": ["http://developer.android.com/*", "https://developer.android.com/*"],
          "js": ["jquery.min.js","page.js"],
 	 "css" : ["page.css"],
          "all_frames": true
