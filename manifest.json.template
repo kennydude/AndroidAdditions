@@ -1,6 +1,6 @@
 {
    "name":        "Android Developer Improvements",
-   "version":     "2.3",
+   "version":     "2.4",
    "manifest_version" : 2,
    "description": "New stuff for Android Devs",
    "permissions": [
